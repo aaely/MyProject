@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'materialize-css/dist/css/materialize.min.css';
-import 'materialize-css/dist/css/StyleSheet1.css'
 import reduxThunk from 'redux-thunk';
 import registerServiceWorker from './registerServiceWorker';
 import { Provider } from 'react-redux';
