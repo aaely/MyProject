@@ -8,6 +8,7 @@ const authRoutes = require('./Routes/authRoutes');
 const billingRoutes = require('./Routes/billingRoutes');
 require('./Models/User');
 require('./Services/passport');
+require('./Services/passportFb');
 require('./Models/Survey');
 
 
