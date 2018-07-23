@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import App from './components/App';
 import reducers from './reducers';
+import './CSS/StyleSheet1.css';
 import axios from 'axios';
 window.axios = axios;
 
