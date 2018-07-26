@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { fetchProducts } from '../actions';
 
-const Store = () => {
+
+class Store extends Component {
+    render() {
     return (
         <div style={{ textAlign: 'center' }}>
             <h1>
@@ -13,6 +17,7 @@ const Store = () => {
 
         </div>
     );
+}
 }
 
 export default Store;

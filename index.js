@@ -10,6 +10,7 @@ require('./Models/User');
 require('./Services/passport');
 require('./Services/passportFb');
 require('./Models/Survey');
+require('./Models/products');
 
 
 mongoose.connect(keys.mongoURI);
