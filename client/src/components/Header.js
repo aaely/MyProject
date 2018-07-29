@@ -2,23 +2,34 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Payments from './payments';
-import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import {
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    NavLink,
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem } from 'reactstrap';
 
 class Header extends Component {
     constructor(props) {
         super(props);
-    
-        this.toggle = this.toggle.bind(this);
+
+        this.toggleNavbar = this.toggleNavbar.bind(this);
         this.state = {
-          dropdownOpen: false
+        collapsed: true
         };
-      }
-    
-    toggle() {
-        this.setState({
-          dropdownOpen: !this.state.dropdownOpen
-        });
-      }
+  }
+
+    toggleNavbar() {
+    this.setState({
+      collapsed: !this.state.collapsed
+    });
+  }
 
     renderContent() {
         switch (this.props.auth) {
@@ -26,15 +37,15 @@ class Header extends Component {
                 return;
             case false:
                 return [
-                    <li><a href="/auth/google">Login with Google</a></li>,
+                    <NavLink href="/auth/google">Login with Google</NavLink>,
                     //<li><a href="/auth/facebook">Login With Facebook</a></li>
                 ];
             default:
                 return [
-                    <li key="1"><Payments /></li>,
-                    <li key="3"><a>Credits: {this.props.auth.credits}</a></li>,
-                    <li key="4"><a href="/store">Store</a></li>,
-                    <li key="2"><a href="/api/logout">Logout</a></li>
+                    <NavItem><NavLink><Payments /></NavLink></NavItem>,
+                    <NavItem><NavLink>Credits: {this.props.auth.credits}</NavLink></NavItem>,
+                    <NavItem><NavLink href="/store">Store</NavLink></NavItem>,
+                    <NavItem><NavLink href="/api/logout">Logout</NavLink></NavItem>
                 ];
         }}
 
@@ -53,14 +64,15 @@ class Header extends Component {
     render() {
         return (
             <div>
-                <nav>
-                    <div className="navbar">
-                    <Link to={this.props.auth ? '/surveys' : '/'} className="left" style={{fontSize: 30}}>My Project</Link>
-                    <ul id="nav-mobile" className="right">
-                        {this.renderContent()}
-                    </ul>
-                    </div>
-                </nav>
+                <Navbar color="dark" expand="md" dark>
+                    <NavbarBrand className="mr-auto"><Link to={this.props.auth ? '/surveys' : '/'}>My Project</Link></NavbarBrand>
+                    <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
+                    <Collapse isOpen={!this.state.collapsed} navbar>
+                        <Nav className="ml-auto" navbar>
+                            {this.renderContent()}
+                        </Nav>
+                    </Collapse>
+                </Navbar>
             </div>
         );
     };

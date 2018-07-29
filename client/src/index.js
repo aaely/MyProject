@@ -1,15 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'materialize-css/dist/css/materialize.min.css';
+//import 'materialize-css/dist/css/materialize.min.css';
 import reduxThunk from 'redux-thunk';
 import registerServiceWorker, { unregister } from './registerServiceWorker';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import App from './components/App';
 import reducers from './reducers';
-import './CSS/StyleSheet1.css';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+//import './CSS/StyleSheet1.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import axios from 'axios';
 window.axios = axios;

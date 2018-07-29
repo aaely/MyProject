@@ -12,10 +12,10 @@ const Dashboard = () => {
                        display: 'block', 
                        padding: '20px', 
                        backgroundColor: '#333', 
-                       color: '#4cff00', 
+                       color: '#007bff', 
                        fontSize: '40px', 
                        borderStyle: 'solid', 
-                       borderColor: '#4cff00', 
+                       borderColor: '#007bff', 
                        borderWidth: '5px',
                        borderRadius: '25px'}} 
         trigger="Click for Surveys" 
