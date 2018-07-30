@@ -2,7 +2,7 @@ import React from 'react';
 
 const Landing = () => {
     return (
-        <div style={{ textAlign: 'center' }}>
+        <div style={{ textAlign: 'center', marginTop: '30px'}}>
             <h1>
                 Emaily
             </h1>
