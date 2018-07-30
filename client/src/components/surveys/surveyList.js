@@ -11,7 +11,7 @@ class SurveyList extends Component {
         return this.props.surveys.reverse().map(survey => {
             return(                
                 <div className="card" key={survey._id} style={{marginTop: '30px', backgroundColor: '#333'}}>
-                    <div className="card-content" style={{color: '#4cff00'}}>
+                    <div className="card-content" style={{color: 'rgb(0, 123, 255)'}}>
                         <span className="card-title">{survey.title}</span>
                         <p>{survey.body}</p>
                         <p className="right">Sent On: {new Date(survey.dateSent).toLocaleDateString()}</p>

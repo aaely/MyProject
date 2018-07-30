@@ -10,7 +10,7 @@ const Dashboard = () => {
         transitionTime="100" 
         triggerStyle={{position: 'relative', 
                        display: 'block', 
-                       padding: '20px', 
+                       padding: '5px', 
                        backgroundColor: '#333', 
                        color: '#007bff', 
                        fontSize: '40px', 
@@ -25,7 +25,7 @@ const Dashboard = () => {
             <p style={{marginTop: '25px'}}></p>
             <div className="fixed-action-btn">
                 <Link style={{backgroundColor: '#333'}} className="btn-floating btn-large" to="/surveys/new">
-                    <i className="material-icons" style={{color: '#4cff00'}}>add</i>
+                    <i className="material-icons" style={{color: 'rgb(0, 123, 255)'}}>add</i>
                 </Link>
             </div>
         </div>
