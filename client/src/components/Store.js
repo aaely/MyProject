@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import CoffeeSlider from './coffeeSlider';
 import ProductsList from './products/productsList';
-
+import Collapsible from 'react-collapsible';
 
 class Store extends Component {
     render() {
@@ -18,7 +18,39 @@ class Store extends Component {
             <h3>
                 MENU
             </h3>
-            <ProductsList />
+            <Collapsible 
+                transitionTime="100" 
+                triggerStyle={{position: 'relative', 
+                            display: 'block', 
+                            padding: '5px', 
+                            backgroundColor: '#333', 
+                            color: '#007bff', 
+                            fontSize: '40px', 
+                            borderStyle: 'solid', 
+                            borderColor: '#007bff', 
+                            borderWidth: '5px',
+                            borderRadius: '25px'}} 
+                trigger="Coffee Products" 
+                triggerWhenOpen="Click to hide">
+                    <p><ProductsList /></p>
+            </Collapsible>
+            <Collapsible 
+                transitionTime="100" 
+                triggerStyle={{position: 'relative', 
+                            display: 'block', 
+                            padding: '5px', 
+                            backgroundColor: '#333', 
+                            color: '#007bff', 
+                            fontSize: '40px', 
+                            borderStyle: 'solid', 
+                            borderColor: '#007bff', 
+                            borderWidth: '5px',
+                            borderRadius: '25px'}} 
+                trigger="Sweets & Cakes" 
+                triggerWhenOpen="Click to hide">
+                    <p><ProductsList /></p>
+            </Collapsible>
+
         </div>
         </div>
     );
