@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchProducts } from '../actions';
 import { Link } from 'react-router-dom';
-//import ProductsList from './products/productsList';
+import CoffeeSlider from './coffeeSlider';
+import ProductsList from './products/productsList';
 
 
 class Store extends Component {
     render() {
     return (
+        <div>
+        <CoffeeSlider />
         <div style={{ textAlign: 'center', position: 'relative', marginTop: '30px' }}>
             <h1>
                 BabyCakes!
@@ -16,7 +18,8 @@ class Store extends Component {
             <h3>
                 MENU
             </h3>
-
+            <ProductsList />
+        </div>
         </div>
     );
 }

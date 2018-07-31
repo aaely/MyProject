@@ -24,6 +24,12 @@ export const fetchSurveys = () => async dispatch => {
 };
 
 export const fetchProducts = () => async dispatch => {
-    const res = await axios.post('/store');
+    const res = await axios.get('/store');
     dispatch({ type: FETCH_PRODUCTS, payload: res.data});
+};
+
+export const submitProducts = (values, history) => async dispatch => {
+    const res = await axios.post('/store', values);
+    history.push('/store');
+    dispatch({ type: FETCH_USER, payload: res.data });
 };

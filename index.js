@@ -12,7 +12,6 @@ require('./Services/passport');
 require('./Models/Survey');
 require('./Models/products');
 
-
 mongoose.connect(keys.mongoURI);
 
 const app = express();
@@ -31,6 +30,7 @@ app.use(passport.session());
 authRoutes(app);
 billingRoutes(app);
 require('./Routes/surveyRoutes')(app);
+require('./Routes/storeRoutes')(app);
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'));
