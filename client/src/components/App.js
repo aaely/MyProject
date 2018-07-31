@@ -9,7 +9,6 @@ import Landing from './Landing';
 import Dashboard from './Dashboard';
 import SurveyNew from './surveys/surveyNew';
 import Store from './Store';
-import SimpleSlider from './slideShow';
 
 class App extends Component {
   componentDidMount() {
