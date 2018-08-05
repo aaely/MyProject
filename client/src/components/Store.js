@@ -18,6 +18,7 @@ class Store extends Component {
             <h3>
                 MENU
             </h3>
+            <div>
             <Collapsible 
                 transitionTime="100" 
                 triggerStyle={{position: 'relative', 
@@ -34,6 +35,8 @@ class Store extends Component {
                 triggerWhenOpen="Click to hide">
                     <p><ProductsList /></p>
             </Collapsible>
+            </div>
+            <div style={{marginTop: '20px'}}>
             <Collapsible 
                 transitionTime="100" 
                 triggerStyle={{position: 'relative', 
@@ -50,7 +53,7 @@ class Store extends Component {
                 triggerWhenOpen="Click to hide">
                     <p><ProductsList /></p>
             </Collapsible>
-
+            </div>
         </div>
         </div>
     );
