@@ -168,11 +168,13 @@
 .card .card-content {
   padding: 24px;
   border-radius: 0 0 2px 2px;
+  overflow: hidden;
 }
 
 .card .card-content p {
   margin: 0;
   color: inherit;
+  overflow: hidden;
 }
 
 .card .card-content .card-title {

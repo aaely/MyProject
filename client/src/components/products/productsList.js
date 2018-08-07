@@ -18,7 +18,7 @@ class ProductsList extends Component {
                     <img src={img} className="coffeeimage"/>
                         <span className="card-title">{product.title}</span>
                     </div>
-                    <div className="card-content">    
+                    <div className="card-content" style={{overflow: 'hidden'}}>    
                         <p></p>
                         <p>Price: ${product.price.toFixed(2)}</p>
                         <p>Description:</p>
