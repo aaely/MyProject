@@ -15,6 +15,7 @@ module.exports = app => {
             .select({ recipients: false });
             
         res.send(surveys);
+        console.log(surveys);
     });
 
     app.get('/api/surveys/thanks', (req, res) => {

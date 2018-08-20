@@ -6,14 +6,9 @@ import {
     Collapse,
     Navbar,
     NavbarToggler,
-    NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem } from 'reactstrap';
+    NavLink, } from 'reactstrap';
 
 class Header extends Component {
     constructor(props) {
@@ -42,10 +37,11 @@ class Header extends Component {
                 ];
             default:
                 return [
-                    <NavItem><NavLink><Payments /></NavLink></NavItem>,
-                    <NavItem><NavLink>Credits: {this.props.auth.credits}</NavLink></NavItem>,
-                    <NavItem><NavLink href="/store">Store</NavLink></NavItem>,
-                    <NavItem><NavLink href="/api/logout">Logout</NavLink></NavItem>
+
+                    <NavItem key='1'><NavLink><Payments /></NavLink></NavItem>,
+                    <NavItem key='2'><NavLink>Credits: {this.props.auth.credits}</NavLink></NavItem>,
+                    <NavItem key='3'><NavLink href="/store">Store</NavLink></NavItem>,
+                    <NavItem key='4'><NavLink href="/api/logout">Logout</NavLink></NavItem>
                 ];
         }}
 
@@ -65,7 +61,7 @@ class Header extends Component {
         return (
             <div>
                 <Navbar color="dark" expand="md" dark>
-                    <NavbarBrand className="mr-auto"><Link to={this.props.auth ? '/surveys' : '/'}>My Project</Link></NavbarBrand>
+                    <Link to={this.props.auth ? '/surveys' : '/'} className='navbar-brand mr-auto ' style={{color: 'rgb(0, 123, 255)'}}>My Project</Link>
                     <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
                     <Collapse isOpen={!this.state.collapsed} navbar>
                         <Nav className="ml-auto" navbar>

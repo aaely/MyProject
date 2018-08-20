@@ -2,10 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SurveyList from './surveys/surveyList';
 import Collapsible from 'react-collapsible';
+import Webcam from 'react-webcam';
 
 const Dashboard = () => {
     return (
         <div style={{marginTop: '30px'}}>
+        <Webcam />
         <Collapsible 
         transitionTime="100" 
         triggerStyle={{position: 'relative', 
@@ -20,7 +22,7 @@ const Dashboard = () => {
                        borderRadius: '25px'}} 
         trigger="Click for Surveys" 
         triggerWhenOpen="Click to hide">
-            <p><SurveyList /></p>
+        <SurveyList />
         </Collapsible>
             <p style={{marginTop: '25px'}}></p>
             <div className="fixed-action-btn">

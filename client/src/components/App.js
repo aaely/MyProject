@@ -14,6 +14,7 @@ class App extends Component {
   componentDidMount() {
     this.props.fetchUser();
   }
+
   render() {
     return (
         <div className="container">
@@ -29,6 +30,6 @@ class App extends Component {
         </div>
     );
   }
-  }
+}
 
 export default connect(null, actions)(App);

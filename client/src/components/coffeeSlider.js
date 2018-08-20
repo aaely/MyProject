@@ -19,13 +19,13 @@ class CoffeeSlider extends React.Component {
     return (
       <Slider {...settings}>
         <div>
-          <img className="coffeeimage" src={img1} />
+          <img className="coffeeimage" alt = '1' src={img1} />
         </div>
         <div>
-          <img className="coffeeimage" src={img2} />
+          <img className="coffeeimage" alt = '1' src={img2} />
         </div>
         <div>
-          <img className="coffeeimage" src={img3} />
+          <img className="coffeeimage" alt = '1' src={img3} />
         </div>
       </Slider>
     );

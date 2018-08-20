@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchProducts } from '../../actions';
-import img from '../images/image7.jpg';
+import { fetchProducts, addToCart, fetchCart } from '../../actions';
 import Slider from 'react-slick';
-
 
 class ProductsList extends Component {
     componentDidMount() {
         this.props.fetchProducts();
+        this.props.fetchCart();
+        this.props.addToCart();
     }
 
     renderProducts() {
@@ -15,16 +15,16 @@ class ProductsList extends Component {
             return (
                 <div className="card" key={product._id} style={{marginTop: '30px', width: '30%', display: 'inline-block', marginRight: '3px', marginLeft: '3px'}}>
                     <div className="card-image">
-                    <img src={img} className="coffeeimage"/>
+                    <img src={product.imagePath} alt ={product.title} className="coffeeimage"/>
                         <span className="card-title">{product.title}</span>
                     </div>
-                    <div className="card-content" style={{overflow: 'hidden'}}>    
+                    <div className="card-content">    
                         <p></p>
                         <p>Price: ${product.price.toFixed(2)}</p>
                         <p>Description:</p>
                         <p>{product.description}</p>
                     </div>
-                    <div className="card-action">
+                    <div className="card-action" onClick={() => addToCart()}>
                         <a>Add to Cart</a>
                     </div>
                 </div>
@@ -77,8 +77,8 @@ class ProductsList extends Component {
     }
 }
 
-function mapStateToProps({ products }) {
-    return { products };
+function mapStateToProps({ products, cart }) {
+    return { products, cart };
 }
 
-export default connect(mapStateToProps, { fetchProducts })(ProductsList);
+export default connect(mapStateToProps, { fetchProducts, fetchCart, addToCart })(ProductsList);
