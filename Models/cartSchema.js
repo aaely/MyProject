@@ -2,7 +2,9 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const cartSchema = new Schema({
-    productId: String,
-});
+        id: String,
+        quantity: Number,
+        price: Number
+    });
 
 module.exports = cartSchema;

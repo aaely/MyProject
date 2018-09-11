@@ -1303,3 +1303,7 @@ button.btn-floating {
     color:white;
     border:1px solid blue;
 }
+.fullimage {
+  height: 100%;
+  width: 100%;
+}

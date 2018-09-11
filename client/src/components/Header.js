@@ -32,7 +32,7 @@ class Header extends Component {
                 return;
             case false:
                 return [
-                    <NavLink href="/auth/google">Login with Google</NavLink>,
+                    <NavLink key='5' href="/auth/google">Login with Google</NavLink>,
                     //<li><a href="/auth/facebook">Login With Facebook</a></li>
                 ];
             default:

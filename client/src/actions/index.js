@@ -28,12 +28,13 @@ export const fetchProducts = () => async dispatch => {
     dispatch({ type: FETCH_PRODUCTS, payload: res.data});
 };
 
-export const fetchCart = (cart) => async dispatch => {
+export const fetchCart = () => async dispatch => {
     const res = await axios.get('/api/cart');
     dispatch({ type: FETCH_CART, payload: res.data });
 };
 
-export const addToCart = (cart) => async dispatch => { 
-    const res = await axios.post('/api/cart');
+export const addToCart = (items) => async dispatch => { 
+    const res = await axios.post('api/cart', items);
     dispatch({ type: ADD_TO_CART, payload: res.data });
+    fetchCart();
 };

@@ -7,13 +7,13 @@ import reducers from '../reducers/index';
 
 export default function configureStore(preloadedState) {
     const middlewares = [loggerMiddleware, thunkMiddleware];
-    console.log(middlewares);
+    
     const middlewareEnhancer = applyMiddleware(...middlewares);
 
     const enhancers = [middlewareEnhancer, monitorReducersEnhancer];
     const composedEnhancers = composeWithDevTools(...enhancers);
 
     const store = createStore(reducers, preloadedState, composedEnhancers);
-
+    console.log(preloadedState);
     return store;
 }

@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SurveyList from './surveys/surveyList';
 import Collapsible from 'react-collapsible';
-import Webcam from 'react-webcam';
+import VideoExample from './webcam';
 
 const Dashboard = () => {
     return (
         <div style={{marginTop: '30px'}}>
-        <Webcam />
+        <VideoExample />
         <Collapsible 
         transitionTime="100" 
         triggerStyle={{position: 'relative', 

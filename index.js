@@ -7,7 +7,7 @@ const keys = require('./config/keys');
 const authRoutes = require('./Routes/authRoutes');
 const billingRoutes = require('./Routes/billingRoutes');
 require('./Models/User');
-//require('./Models/Cart');
+require('./Models/Cart');
 require('./Services/passport');
 //require('./Services/passportFb');
 require('./Models/Survey');
@@ -32,6 +32,7 @@ authRoutes(app);
 billingRoutes(app);
 require('./Routes/surveyRoutes')(app);
 require('./Routes/storeRoutes')(app);
+require('./Routes/cartRoutes')(app);
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'));

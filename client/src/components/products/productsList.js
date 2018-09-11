@@ -6,12 +6,11 @@ import Slider from 'react-slick';
 class ProductsList extends Component {
     componentDidMount() {
         this.props.fetchProducts();
-        this.props.fetchCart();
-        this.props.addToCart();
     }
 
     renderProducts() {
         return this.props.products.map(product => {
+            let values = { id: product._id, quantity: 1, price: product.price }
             return (
                 <div className="card" key={product._id} style={{marginTop: '30px', width: '30%', display: 'inline-block', marginRight: '3px', marginLeft: '3px'}}>
                     <div className="card-image">
@@ -22,9 +21,9 @@ class ProductsList extends Component {
                         <p></p>
                         <p>Price: ${product.price.toFixed(2)}</p>
                         <p>Description:</p>
-                        <p>{product.description}</p>
+                        <p>{this.props.products.length}</p>
                     </div>
-                    <div className="card-action" onClick={() => addToCart()}>
+                    <div className="card-action" onClick={addToCart(values)}>
                         <a>Add to Cart</a>
                     </div>
                 </div>
