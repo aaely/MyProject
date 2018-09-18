@@ -6,7 +6,7 @@ const keys = require('../config/keys');
 const User = mongoose.model('users');
 
 passport.serializeUser((user, done) => {
-    done(null, user.id);
+    done(null, user);
 });
 
 passport.deserializeUser((id, done) => {
@@ -24,7 +24,7 @@ passport.use(
         proxy : true
         },
         async (accessToken, refreshToken, profile, done) => {
-            const existingUser = await User.findOne({ googleId: profile.id});
+            const existingUser = await User.find({ googleId: profile.id});
                     if (existingUser) {
                         // if user already exists
                         return done(null, existingUser);

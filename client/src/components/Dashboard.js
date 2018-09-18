@@ -3,11 +3,22 @@ import { Link } from 'react-router-dom';
 import SurveyList from './surveys/surveyList';
 import Collapsible from 'react-collapsible';
 import VideoExample from './webcam';
+import { CSSTransitionGroup } from 'react-transition-group';
+import ReactPlayer from 'react-player';
 
 const Dashboard = () => {
     return (
         <div style={{marginTop: '30px'}}>
-        <VideoExample />
+        <img src="testing.jpg" className="rotating" alt="1" style={{borderRadius: '50%', height:'300px', width:'300px', marginLeft: '35%', marginBottom: '40px'}} />
+        <CSSTransitionGroup
+                    transitionName="fade"
+                    transitionAppear={true}
+                    transitionAppearTimeout={2000}
+                    transitionEnterTimeout={2000}
+                    transitionLeaveTimeout={2000}
+                >
+                <ReactPlayer url='https://www.youtube.com/watch?v=9kXyRkXyv-U' playing  style={{marginLeft: 'auto', marginRight: 'auto', marginBottom: '40px'}}/>
+        </CSSTransitionGroup>
         <Collapsible 
         transitionTime="100" 
         triggerStyle={{position: 'relative', 

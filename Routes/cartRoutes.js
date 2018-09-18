@@ -7,7 +7,7 @@ module.exports = app => {
     app.get('/api/cart', requireLogin, async (req, res) => {
         const { id, quantity, price } = req.body;
         const cartExists = await Cart.find({ _user: req.user.id })
-            .select({ _id: false, _user: false, __v: false, _id: false });
+            .select({ _id: false, _user: false, __v: false });
         if(cartExists) {
             res.send(cartExists);
             
@@ -16,9 +16,10 @@ module.exports = app => {
                 cart: [{ id, quantity, price }],
                 _user: req.user.id
             });
-            await Cart.save();
+            //await Cart.save();
             res.send(newCart);
         }
+        console.log(cartExists);
     });
 
     app.post('/api/cart', requireLogin, async (req, res) => {

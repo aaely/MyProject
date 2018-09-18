@@ -11,6 +11,7 @@ import SurveyNew from './surveys/surveyNew';
 import Store from './Store';
 import Display from './Display'
 import mobileDisplay from './mobileDisplay'
+import todoList from './todoList';
 
 class App extends Component {
   componentDidMount() {
@@ -29,6 +30,7 @@ class App extends Component {
             <Route path="/store" component={Store} />
             <Route path="/display" component={Display} />
             <Route path="/mobiledisplay" component={mobileDisplay} />
+            <Route path="/todoList" component={todoList} />
           </div>
         </BrowserRouter>
         </div>

@@ -30,6 +30,7 @@
     "react-dom": "^16.4.1",
     "react-full-screen": "^0.2.3",
     "react-multimedia-capture": "^1.2.0",
+    "react-player": "^1.6.4",
     "react-redux": "^5.0.7",
     "react-responsive-navbar": "^1.0.11",
     "react-router-dom": "^4.3.1",
@@ -37,10 +38,12 @@
     "react-slick": "^0.23.1",
     "react-slideshow-image": "^0.2.2",
     "react-stripe-checkout": "^2.6.3",
+    "react-transition-group": "^1.2.1",
     "react-webcam": "^1.0.1",
     "react-webcam-capture": "^1.2.1",
     "reactstrap": "^6.3.0",
     "redux": "^4.0.0",
+    "redux-devtools-extension": "^2.13.5",
     "redux-form": "^7.4.2",
     "redux-saga": "^0.16.0",
     "redux-thunk": "^2.3.0",
@@ -55,5 +58,4 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
-  
 }

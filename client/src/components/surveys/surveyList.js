@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchSurveys } from '../../actions';
+import { CSSTransitionGroup } from 'react-transition-group';
 
 class SurveyList extends Component {
     componentDidMount() {
@@ -28,7 +29,13 @@ class SurveyList extends Component {
     render() {
         return (
             <div>
+                <CSSTransitionGroup
+                    transitionName="fade"
+                    transitionEnterTimeout={1000}
+                    transitionLeaveTimeout={1000}
+                >
                 {this.renderSurveys()}
+                </CSSTransitionGroup>
             </div>
         );
     }
