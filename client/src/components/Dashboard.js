@@ -9,7 +9,9 @@ import ReactPlayer from 'react-player';
 const Dashboard = () => {
     return (
         <div style={{marginTop: '30px'}}>
-        <img src="testing.jpg" className="rotating" alt="1" style={{borderRadius: '50%', height:'300px', width:'300px', marginLeft: '35%', marginBottom: '40px'}} />
+        <div className='rotatingimage' style={{marginLeft: 'auto', marginRight: 'auto'}}>
+        <img src="testing.jpg" className="rotating" alt="1" style={{ marginLeft: 'auto', marginRight: 'auto'}}/>
+        </div>
         <CSSTransitionGroup
                     transitionName="fade"
                     transitionAppear={true}

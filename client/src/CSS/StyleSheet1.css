@@ -1380,3 +1380,11 @@ button.btn-floating {
   -o-animation: rotating 2s linear infinite;
   animation: rotating 2s linear infinite;
 }
+
+.rotatingimage .rotating{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  border-radius: 50%;
+}
