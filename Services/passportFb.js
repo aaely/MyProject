@@ -24,13 +24,9 @@ passport.use(
         proxy : true
         },
         async (accessToken, refreshToken, profile, done) => {
-            const existingUser = await User.findOne({ facebookId: profile.id});
-                    if (existingUser) {
-                        // if user already exists
-                        return done(null, existingUser);
-                    }
-                    const user = await new User({ facebookId: profile.id}).save();
-                    done(null, user);          
+            User.findOrCreate({ facebookId: profile.id }, function (err, user) {
+                return done(err, user);
+              });       
         }
     )
 );

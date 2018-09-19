@@ -9,7 +9,7 @@ const billingRoutes = require('./Routes/billingRoutes');
 require('./Models/User');
 require('./Models/Cart');
 require('./Services/passport');
-//require('./Services/passportFb');
+require('./Services/passportFb');
 require('./Models/Survey');
 require('./Models/products');
 
