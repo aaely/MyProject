@@ -1304,8 +1304,8 @@ button.btn-floating {
     border:1px solid blue;
 }
 .fullimage {
-  height: 100%;
-  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .fade-enter {
@@ -1330,10 +1330,21 @@ button.btn-floating {
   transform: rotateX(90deg) rotateZ(90deg);
 }
 
+.example-appear {
+  opacity: 0.01;
+  transform: rotateX(90deg) rotateZ(90deg);
+}
+
 .example-enter.example-enter-active {
   opacity: 1;
-  transition: opacity 10000ms ease-in;
+  transition: opacity 1000ms ease-in;
   transform: rotateX(0deg) rotateZ(0deg);
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  transform: rotateX(0deg) rotateZ(0deg);
+  transition: 1000ms ease-in;
 }
 
 .example-leave {
@@ -1389,4 +1400,57 @@ button.btn-floating {
   border-radius: 50%;
   height: 300px;
   width: 300px;
+}
+
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+}
+ 
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.trigger {
+  position: relative; 
+  display: block; 
+  padding: '5px';
+  background-color : #333; 
+  color: #007bff;
+  font-size: 40px;
+  border-style: solid; 
+  border-color: #007bff; 
+  border-width: 5px;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.triggerHide {
+  position: relative; 
+  display: block; 
+  padding: '5px';
+  background-color : #000000; 
+  color: #007bff;
+  font-size: 40px;
+  border-style: solid; 
+  border-color: #007bff; 
+  border-width: 5px;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.trigger:hover {
+  background-color: #000000;
+}
+
+.triggerHide:hover {
+  background-color: #333;
+}
+
+.material-icons:hover {
+  background-color: #000000;
 }

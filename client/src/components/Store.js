@@ -5,6 +5,7 @@ import { fetchCart, addToCart } from '../actions';
 import CoffeeSlider from './coffeeSlider';
 import ProductsList from './products/productsList';
 import Collapsible from 'react-collapsible';
+import { CSSTransitionGroup } from 'react-transition-group';
 
 class Store extends Component {
     componentDidMount() {
@@ -13,7 +14,7 @@ class Store extends Component {
 
     renderCart() {
             return (
-                <div id="ex2">
+                <div id="ex2" style={{marginTop: '40px'}}>
                     <span className="p1 fa-stack fa-2x has-badge" data-count={this.props.cart.cart.items.length} >
                         <i className="p2 fa fa-circle fa-stack-2x"></i>
                         <i className="p3 fa fa-shopping-cart fa-stack-1x xfa-inverse" style={{color: 'rgb(0, 123, 255)'}} data-count="4b"></i>
@@ -22,14 +23,35 @@ class Store extends Component {
             );
         }
     
+    renderCakes() {
+        return (
+            <div className='trigger'>
+                Cakes
+            </div>
+        )
+    }
+
+    renderHide() {
+        return (
+            <div className='triggerHide'>
+                Hide
+            </div>
+        )
+    }
+    
     render() {
     return (
         <div>
+        <CSSTransitionGroup
+            transitionName="example"
+            transitionAppear={true}
+            transitionAppearTimeout={1000}
+            transitionEnterTimeout={1000}
+            transitionLeaveTimeout={1000}
+                        >
         <CoffeeSlider />
+        </CSSTransitionGroup>
         <Collapsible
-            triggerStyle={{
-                position: 'sticky',
-                display: 'block'}}
                 transitionTime= '50'
                 trigger= {this.renderCart()}
                 triggerWhenOpen= {this.renderCart()}
@@ -46,18 +68,8 @@ class Store extends Component {
             </h3>
             <div style={{marginTop: '20px'}}>
             <Collapsible  
-                triggerStyle={{position: 'relative', 
-                            display: 'block', 
-                            padding: '5px', 
-                            backgroundColor: '#333', 
-                            color: '#007bff', 
-                            fontSize: '40px', 
-                            borderStyle: 'solid', 
-                            borderColor: '#007bff', 
-                            borderWidth: '5px',
-                            borderRadius: '25px'}} 
-                trigger="Sweets & Cakes" 
-                triggerWhenOpen="Click to hide">
+                trigger={this.renderCakes()} 
+                triggerWhenOpen={this.renderHide()}>
                     <ProductsList />
             </Collapsible>
             </div>

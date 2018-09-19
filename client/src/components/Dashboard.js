@@ -1,12 +1,39 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import SurveyList from './surveys/surveyList';
 import Collapsible from 'react-collapsible';
-import VideoExample from './webcam';
+//import VideoExample from './webcam';
 import { CSSTransitionGroup } from 'react-transition-group';
-import ReactPlayer from 'react-player';
+//import ReactPlayer from 'react-player';
+import ResponsivePlayer from './responsivePlayer';
 
-const Dashboard = () => {
+class Dashboard extends Component {
+
+    renderDropDown1() {
+        return (
+            <span className="trigger">
+                Fights
+            </span>
+        );
+    }
+
+    renderDropDown2() {
+        return (
+            <span className="trigger">
+                Cakes
+            </span>
+        );
+    }
+
+    renderHide() {
+        return (
+            <span className="triggerHide">
+                Hide
+            </span>
+        );
+    }
+
+    render() {
     return (
         <div style={{marginTop: '30px'}}>
         <div className='rotatingimage' style={{marginLeft: 'auto', marginRight: 'auto'}}>
@@ -19,24 +46,20 @@ const Dashboard = () => {
                     transitionEnterTimeout={2000}
                     transitionLeaveTimeout={2000}
                 >
-                <ReactPlayer url='https://www.youtube.com/watch?v=9kXyRkXyv-U' playing  style={{marginLeft: 'auto', marginRight: 'auto', marginBottom: '40px'}}/>
-        </CSSTransitionGroup>
         <Collapsible 
-        transitionTime="100" 
-        triggerStyle={{position: 'relative', 
-                       display: 'block', 
-                       padding: '5px', 
-                       backgroundColor: '#333', 
-                       color: '#007bff', 
-                       fontSize: '40px', 
-                       borderStyle: 'solid', 
-                       borderColor: '#007bff', 
-                       borderWidth: '5px',
-                       borderRadius: '25px'}} 
-        trigger="Click for Surveys" 
-        triggerWhenOpen="Click to hide">
-        <SurveyList />
+        transitionTime="500" 
+        trigger={this.renderDropDown1()} 
+        triggerWhenOpen={this.renderHide()}>
+        <ResponsivePlayer />
         </Collapsible>
+        <Collapsible 
+        transitionTime="500" 
+        trigger={this.renderDropDown2()} 
+        triggerWhenOpen={this.renderHide()}>
+        <SurveyList />
+        
+        </Collapsible>
+        </CSSTransitionGroup>        
             <p style={{marginTop: '25px'}}></p>
             <div className="fixed-action-btn">
                 <Link style={{backgroundColor: '#333'}} className="btn-floating btn-large" to="/surveys/new">
@@ -45,6 +68,7 @@ const Dashboard = () => {
             </div>
         </div>
     );
+}
 };
 
 export default Dashboard;
