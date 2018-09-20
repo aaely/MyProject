@@ -20,7 +20,7 @@ class Dashboard extends Component {
     renderDropDown2() {
         return (
             <span className="trigger">
-                Cakes
+                Surveys
             </span>
         );
     }
@@ -42,9 +42,9 @@ class Dashboard extends Component {
         <CSSTransitionGroup
                     transitionName="fade"
                     transitionAppear={true}
-                    transitionAppearTimeout={2000}
-                    transitionEnterTimeout={2000}
-                    transitionLeaveTimeout={2000}
+                    transitionAppearTimeout={1000}
+                    transitionEnterTimeout={1000}
+                    transitionLeaveTimeout={1000}
                 >
         <Collapsible 
         transitionTime="500" 

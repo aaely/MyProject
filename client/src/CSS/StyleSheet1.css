@@ -1309,7 +1309,7 @@ button.btn-floating {
 }
 
 .fade-enter {
-  transform: rotateX(360deg) rotatez(360deg)
+  transform: rotateX(180deg) rotatez(180deg)
 }
 
 .fade-appear {
@@ -1318,12 +1318,12 @@ button.btn-floating {
 
 .fade-enter-active {
   transform: rotateX(0deg) rotatez(0deg);
-  transition: 2000ms ease-in;
+  transition: 1000ms ease-in;
 }
 
 .fade-appear-active {
   transform: rotatey(0deg);
-  transition: 2000ms ease-in;
+  transition: 1000ms ease-in;
 }
 
 .example-enter {
