@@ -1326,33 +1326,33 @@ button.btn-floating {
   transition: 1000ms ease-in;
 }
 
-.example-enter {
+.example1-enter {
   opacity: 0.01;
   transform: rotateX(90deg) rotateZ(90deg);
 }
 
-.example-appear {
+.example1-appear {
   opacity: 0.01;
   transform: rotateX(90deg) rotateZ(90deg);
 }
 
-.example-enter.example-enter-active {
+.example1-enter.example1-enter-active {
   opacity: 1;
   transition: opacity 1000ms ease-in;
   transform: rotateX(0deg) rotateZ(0deg);
 }
 
-.example-appear.example-appear-active {
+.example1-appear.example1-appear-active {
   opacity: 1;
   transform: rotateX(0deg) rotateZ(0deg);
   transition: 1000ms ease-in;
 }
 
-.example-leave {
+.example1-leave {
   opacity: 1;
 }
 
-.example-leave.example-leave-active {
+.example1-leave.example-leave-active {
   opacity: 0.01;
   transition: opacity 10000ms ease-in;
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchCart, addToCart } from '../actions';
+import { fetchCart } from '../actions';
 //import { Link } from 'react-router-dom';
 import CoffeeSlider from './coffeeSlider';
 import ProductsList from './products/productsList';
@@ -43,7 +43,7 @@ class Store extends Component {
     return (
         <div>
         <CSSTransitionGroup
-            transitionName="example"
+            transitionName="example1"
             transitionAppear={true}
             transitionAppearTimeout={1000}
             transitionEnterTimeout={1000}
@@ -83,4 +83,4 @@ function mapstatetoprops({ cart }) {
     return { cart };
 }
 
-export default connect(mapstatetoprops, { fetchCart, addToCart })(Store);
+export default connect(mapstatetoprops, { fetchCart })(Store);

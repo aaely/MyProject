@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchProducts, addToCart, fetchCart } from '../../actions';
+import { fetchProducts, addToCart } from '../../actions';
 import Slider from 'react-slick';
 
 class ProductsList extends Component {
     componentDidMount() {
         this.props.fetchProducts();
+        this.props.addToCart();
     }
 
     renderProducts() {
@@ -23,7 +24,7 @@ class ProductsList extends Component {
                         <p>Description:</p>
                         <p>{this.props.products.length}</p>
                     </div>
-                    <div className="card-action" onClick={addToCart(values)}>
+                    <div className="card-action" onClick={() => this.props.addToCart(values)}>
                         <a>Add to Cart</a>
                     </div>
                 </div>
@@ -80,4 +81,4 @@ function mapStateToProps({ products, cart }) {
     return { products, cart };
 }
 
-export default connect(mapStateToProps, { fetchProducts, fetchCart, addToCart })(ProductsList);
+export default connect(mapStateToProps, { fetchProducts, addToCart })(ProductsList);

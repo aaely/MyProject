@@ -3,7 +3,6 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from '../actions/index';
 
-
 import Header from './Header';
 import Landing from './Landing';
 import Dashboard from './Dashboard';
@@ -12,6 +11,7 @@ import Store from './Store';
 import Display from './Display'
 import mobileDisplay from './mobileDisplay'
 import todoList from './todoList';
+import AccessLog from './remoteAccess/accessLog'
 
 class App extends Component {
   componentDidMount() {
@@ -31,6 +31,7 @@ class App extends Component {
             <Route path="/display" component={Display} />
             <Route path="/mobiledisplay" component={mobileDisplay} />
             <Route path="/todoList" component={todoList} />
+            <Route path="/accessform" component={AccessLog} />
           </div>
         </BrowserRouter>
         </div>

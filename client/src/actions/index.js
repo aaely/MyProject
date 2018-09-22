@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { FETCH_USER, FETCH_SURVEYS, FETCH_PRODUCTS, ADD_TO_CART, FETCH_CART } from './types';
+import { FETCH_ACCESS_LOG, FETCH_USER, FETCH_SURVEYS, FETCH_PRODUCTS, ADD_TO_CART, FETCH_CART } from './types';
 
 export const fetchUser = () => async dispatch => {
     const res = await axios.get('/api/current_user');
@@ -34,7 +34,13 @@ export const fetchCart = () => async dispatch => {
 };
 
 export const addToCart = (items) => async dispatch => { 
-    const res = await axios.post('api/cart', items);
+    const res = await axios.post('api/cart/add', items);
     dispatch({ type: ADD_TO_CART, payload: res.data });
-    fetchCart();
+    console.log(res.data);
+};
+
+export const submitAccessForm = (values, history) => async dispatch => {
+    const res = await axios.post('/api/accessForm', values);
+    history.push('/accessForm');
+    dispatch({ type: FETCH_ACCESS_LOG, payload: res.data});
 };
