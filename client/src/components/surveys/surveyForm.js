@@ -7,6 +7,28 @@ import _ from 'lodash';
 import formFields from './formFields';
 
 class SurveyForm extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {date: new Date()};
+      }
+    
+    componentDidMount() {
+        this.timerID = setInterval(
+            () => this.tick(),
+            1000
+          );
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.timerID);
+    }
+
+    tick() {
+        this.setState({
+          date: new Date()
+        });
+      }
+
     renderFields() {
         return _.map(formFields, ({ label, name }) => {
             return <Field key={name} component={SurveyField} type="text" label={label} name={name} />
@@ -14,10 +36,20 @@ class SurveyForm extends Component {
     }
 
     render() {
+        const leaveTime = this.state.date.toLocaleDateString();
         return(
             <div style={{marginTop: '30px', marginBottom: '40px'}}>
                 <form onSubmit={this.props.handleSubmit(this.props.onSurveySubmit)}>
                     {this.renderFields()}
+                    <table style={{width: '100%', border: '1px solid black', marginTop: '10px', marginBottom: '20px', textAlign: 'center'}}>
+                        <thead style={{backgroundColor: 'black', textDecorationColor: 'green'}}>
+                        <tr><th>Time In</th><th>Time Out</th></tr>
+                        </thead>
+                        <tbody>
+                        <tr><td>{this.state.date.toLocaleTimeString()}</td><td>{this.state.date.toLocaleTimeString()}</td></tr>
+                        <tr><td>{this.state.date.toLocaleDateString()}</td><td><Field key="exitTime" type="date" name="exitTime">{this.state.date.toLocaleDateString()}</Field></td></tr>
+                        </tbody>
+                    </table>
                     <Link to="/surveys" className="red btn-flat white-text">
                         Cancel
                     </Link>

@@ -29,8 +29,8 @@ class AccessForm extends Component {
       }    
 
     renderFields() {
-        return _.map(accessFormFields, ({ label, name, type }) => {
-            return <Field key={name} component={AccessFormField} label={label} name={name} />
+        return _.map(accessFormFields, ({ label, name }) => {
+            return <Field key={name} component={AccessFormField} type="text" label={label} name={name} />
         });
     }
 
