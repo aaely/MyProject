@@ -10,7 +10,7 @@ class ResponsivePlayer extends Component {
           playing url='https://www.youtube.com/watch?v=9kXyRkXyv-U'
           width='100%'
           height='100%'
-          //playing={false}
+          playing={false}
         />
       </div>
     )

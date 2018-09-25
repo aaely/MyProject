@@ -1,4 +1,5 @@
-var loacltunnel = require('localtunnel');
-loacltunnel(5000, { subdomain: 'jhfkewrhflkerw' }, function(err, tunnel) {
-    console.log('LT running')
+var localtunnel = require('localtunnel');
+let lt = localtunnel(5000, { subdomain: 'jhfkewrhflkerw' }, function(err, tunnel) {
+    console.log('LT running');
+    console.log(lt);
 });

@@ -36,7 +36,8 @@ export const fetchCart = () => async dispatch => {
 export const addToCart = (items) => async dispatch => { 
     const res = await axios.post('api/cart/add', items);
     dispatch({ type: ADD_TO_CART, payload: res.data });
-    console.log(res.data);
+    
+    fetchCart();
 };
 
 export const submitAccessForm = (values, history) => async dispatch => {
