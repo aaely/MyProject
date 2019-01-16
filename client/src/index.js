@@ -16,6 +16,10 @@ unregister();
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.querySelector('#root'));
 
+if(module.hot) {
+    module.hot.accept();
+}
+
 console.log('Environment is', process.env.NODE_ENV);
 
 console.log(store);
