@@ -33,11 +33,12 @@ class Header extends Component {
             case false:
                 return [
                     <NavLink key='5' href="/auth/google">Login with Google</NavLink>,
-                    <NavLink key='6' href="/auth/facebook">Login With Facebook</NavLink>
+                    <NavLink key='6' href="/auth/facebook">Login With Facebook</NavLink>,
+                    <NavLink key='7' href="/resume">About Me</NavLink>
                 ];
             default:
                 return [
-
+                    <NavLink key='7' href="/resume">About Me</NavLink>,
                     <NavItem key='1'><NavLink><Payments /></NavLink></NavItem>,
                     <NavItem key='2'><NavLink>Credits: {this.props.auth.credits}</NavLink></NavItem>,
                     <NavItem key='3'><NavLink href="/store">Store</NavLink></NavItem>,

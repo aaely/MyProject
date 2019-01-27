@@ -1455,3 +1455,7 @@ button.btn-floating {
 .material-icons:hover {
   background-color: #000000;
 }
+
+.btn-green {
+  background-color: #07c517
+}
