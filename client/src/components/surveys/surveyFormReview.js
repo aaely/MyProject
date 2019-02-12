@@ -8,6 +8,7 @@ import { withRouter } from 'react-router-dom';
 const SurveyReview = ({ onCancel, formValues, submitSurvey, history }) => {
     const reviewFields = _.map(formFields, ({ name, label }) => {
         return (
+            
             <div key={name}>
                 <label>{label}</label>
                 <div>
@@ -21,6 +22,12 @@ const SurveyReview = ({ onCancel, formValues, submitSurvey, history }) => {
         <div style={{marginTop: '30px', marginBottom: '40px'}}>
             <h5>Please confirm your entries</h5>
             {reviewFields}
+            <div key="timeIn">
+            <label>Time In</label>
+            <div>
+                {formValues["timeIn"]}
+            </div>
+            </div>
             <button 
                 className="red btn-flat"
                 onClick={onCancel}

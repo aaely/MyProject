@@ -30,8 +30,8 @@ class SurveyForm extends Component {
       }
 
     renderFields() {
-        return _.map(formFields, ({ label, name }) => {
-            return <Field key={name} component={SurveyField} type="text" label={label} name={name} />
+        return _.map(formFields, ({ label, name, type, placeholder }) => {
+            return <Field key={name} component={SurveyField} placeholder={placeholder} type={type} label={label} name={name} />
         });
     }
 
@@ -42,12 +42,12 @@ class SurveyForm extends Component {
                 <form onSubmit={this.props.handleSubmit(this.props.onSurveySubmit)}>
                     {this.renderFields()}
                     <table style={{width: '100%', border: '1px solid black', marginTop: '10px', marginBottom: '20px', textAlign: 'center'}}>
-                        <thead style={{backgroundColor: 'black', textDecorationColor: 'green'}}>
+                        <thead style={{backgroundColor: 'black', color: 'green'}}>
                         <tr><th>Time In</th><th>Time Out</th></tr>
                         </thead>
                         <tbody>
-                        <tr><td>{this.state.date.toLocaleTimeString()}</td><td>{this.state.date.toLocaleTimeString()}</td></tr>
-                        <tr><td>{this.state.date.toLocaleDateString()}</td><td><Field key="exitTime" type="date" name="exitTime">{this.state.date.toLocaleDateString()}</Field></td></tr>
+                        <tr><td><Field key="timeIn" component="input" style={{textAlign: 'center', width: '100px'}} type="text" label="Time In" name="timeIn" defaultValue={this.state.date.toLocaleTimeString()} /></td><td style={{textAlign: 'center', width: '100px'}}>{this.state.date.toLocaleTimeString()} /></td></tr>
+                        <tr><td>{this.state.date.toLocaleDateString()}</td><td>{this.state.date.toLocaleDateString()}</td></tr>
                         </tbody>
                     </table>
                     <Link to="/surveys" className="red btn-flat white-text">
@@ -66,7 +66,7 @@ class SurveyForm extends Component {
 function validate(values) {
     const errors = {};
 
-    errors.recipients = validateEmails(values.recipients || '');
+    errors.email = validateEmails(values.email || '');
 
     _.each(formFields, ({ name, noValueError }) => {
         if(!values[name]) {

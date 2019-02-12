@@ -20,7 +20,7 @@ class Dashboard extends Component {
     renderDropDown2() {
         return (
             <span className="trigger">
-                Surveys
+                Entry Logs
             </span>
         );
     }
@@ -57,7 +57,7 @@ class Dashboard extends Component {
         trigger={this.renderDropDown2()} 
         triggerWhenOpen={this.renderHide()}>
         <SurveyList />
-        
+        <button onClick={this.renderHide()}>Hide</button>
         </Collapsible>
         </CSSTransitionGroup>        
             <p style={{marginTop: '25px'}}></p>
