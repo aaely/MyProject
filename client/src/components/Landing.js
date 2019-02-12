@@ -7,9 +7,9 @@ const Landing = () => {
         <SimpleSlider />
         <div style={{ textAlign: 'center', marginTop: '30px'}}>
             <h1>
-                Create a Survey!
+                <a href="/resume">About Me</a>
             </h1>
-            Collect feedback from your users
+            Aaron Ely
         </div>
         </div>
     )

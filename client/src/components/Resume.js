@@ -52,13 +52,23 @@ class Resume extends Component {
           <TabPane tabId="1">
                 <h2 style={{textAlign: 'center'}}>About Me:</h2>
                 <h4>MMA Career</h4>
+                <p>
+                  I had my first fight on April 20th 2010. I knew that night that I could take this game very far... so I went 
+                  all in. I completely devoted myself to traveling and training. After reaching the 9-0 amateur mark
+                  I was offered an opportunity to go to Alliance in Chula Vista, CA and train with Dominick Cruz to help get him ready for Scott Jorgensen.
+                  At this point in my career, I was the premier up and coming amateur. After winning all of them, I got to make my
+                  professional debut on Sharkfights. I was lucky enough to be invited back to Alliance to help Dom get ready for Urijah Faber
+                  in the Bantamweight UFC debut. Being exposed to the best in the business helped me to formulate a fighting style/system. I was able
+                  formulate a style-- or rather, mix of styles. Being given proper resistance is what self growth is all about, and without it one
+                  will develop a false sense of security. 
+                </p>
                 <h4>Penn National Gaming</h4>
           </TabPane>
           <TabPane tabId="2">
                 <h2 style={{textAlign: 'center', textDecoration: 'underline'}}>Networking</h2>
             <Row>
               <Col sm="6">
-                <Card body style={{ backgroundColor: '#666', color: 'limegreen' }} >
+                <Card body style={{backgroundColor: 'limegreen', color: 'black'}}>
                   <CardTitle style={{ textDecoration: 'underline', textAlign: 'center' }}>CCNP</CardTitle>
                   <ul>
                   <li><CardText>Very strong core networking skills</CardText></li>
@@ -70,7 +80,7 @@ class Resume extends Component {
                 </Card>      
               </Col>
               <Col sm="6">
-                <Card body style={{ backgroundColor: '#666', color: 'limegreen' }} >
+                <Card body style={{backgroundColor: 'limegreen', color: 'black'}}>
                   <CardTitle style={{ textDecoration: 'underline', textAlign: 'center' }}>Python Scripting</CardTitle>
                   <ul>
                   <li><CardText>Automate config of VLAN database, SNMP, AAA/Radius, SSH, STP</CardText></li>
@@ -108,25 +118,34 @@ class Resume extends Component {
                 </Card>
               </Col>
             </Row>
-            <h2 style={{textAlign: 'center', textDecoration: 'underline'}}>Casino Specific</h2>
+            <h2 style={{textAlign: 'center', textDecoration: 'underline'}}>Servers and Virtual Machines</h2>
             <Row>
               <Col sm="6">
                 <Card body style={{backgroundColor: 'limegreen', color: 'black'}}>
-                  <CardTitle>SCCM Management</CardTitle>
-                  <CardText>Setup up several Labs with multiple sites in a virtual environment</CardText>
-                  <CardText>Advanced implementation of WSUS and custom image deployment</CardText>
-                  <CardText>Automatic mapping of printers and drives</CardText>
-                  <CardText>Will obtain the certification as soon as it is financially feasible</CardText>
+                  <CardTitle style={{textDecoration: 'underline', textAlign: 'center'}}>SCCM Management</CardTitle>
+                  <ul>
+                  <li><CardText>Setup up environments on MS Server 2016</CardText></li>
+                  <li><CardText>Advanced implementation of WSUS and custom image deployment</CardText></li>
+                  <li><CardText>Automatic mapping of printers and drives</CardText></li>
+                  <li><CardText>Silent scheduled winidows and application updates</CardText></li>
+                  </ul>
+                  <Button href='https://www.microsoft.com/en-us/cloud-platform/system-center-configuration-manager-features' style={{backgroundColor: 'black', color: 'lawngreen'}}>What is SCCM</Button>
                 </Card>
               </Col>
               <Col sm="6">
                 <Card body style={{backgroundColor: 'limegreen', color: 'black'}}>
-                  <CardTitle>Casino Support</CardTitle>
-                  <CardText>M Resort managed by Penn National Gaming</CardText>
-                  <CardText>Support all applications and systems used by Penn</CardText>
+                  <CardTitle style={{textDecoration: 'underline', textAlign: 'center'}}>Vsphere/VCenter/VMWare</CardTitle>
+                  <ul>
+                  <li><CardText>Build hosts from scratch and pull them into the active cluster</CardText></li>
+                  <li><CardText>Configure and Optimize the VCenter server appliance</CardText></li>
+                  <li><CardText>Configure administrative options for security</CardText></li>
+                  <li><CardText>Configure Failover and Load-Balancing between hosts</CardText></li>
+                  <li><CardText>Apply patches and upgrade binaries</CardText></li>
+                  </ul>
+                  <Button href='https://vmware.com' style={{backgroundColor: 'black', color: 'lawngreen'}}>VMWare</Button>
                 </Card>
               </Col>
-            </Row>
+            </Row>           
           </TabPane>
         </TabContent>
       </div>
