@@ -60,7 +60,7 @@ class Resume extends Component {
                   professional debut on Sharkfights. I was lucky enough to be invited back to Alliance to help Dom get ready for Urijah Faber
                   in the Bantamweight UFC debut. Being exposed to the best in the business helped me to formulate a fighting style/system. I was able
                   formulate a style-- or rather, mix of styles. Being given proper resistance is what self growth is all about, and without it one
-                  will develop a false sense of security. 
+                  will develop a false sense of security. This is what the world of martial arts is lacking. 
                 </p>
                 <h4>Penn National Gaming</h4>
           </TabPane>
