@@ -55,14 +55,23 @@ class Resume extends Component {
                 <p>
                   I had my first fight on April 20th 2010. I knew that night that I could take this game very far... so I went 
                   all in. I completely devoted myself to traveling and training. After reaching the 9-0 amateur mark
-                  I was offered an opportunity to go to Alliance in Chula Vista, CA and train with Dominick Cruz to help get him ready for Scott Jorgensen.
+                  I was offered an opportunity to go to Alliance in Chula Vista, CA and train with Dominick Cruz to help get him ready for Scott Jorgensen in <a href='https://www.ufc.tv/video/dominick-cruz-vs-scott-jorgensen-wec-53'>Cruz-Jorgensen</a> .
                   At this point in my career, I was the premier up and coming amateur. After winning all of them, I got to make my
-                  professional debut on Sharkfights. I was lucky enough to be invited back to Alliance to help Dom get ready for Urijah Faber
+                  professional debut on Sharkfights. I was lucky enough to be invited back to Alliance to help <a href='https://www.sherdog.com/fighter/Dominick-Cruz-12107'>Dom</a> get ready for Urijah Faber
                   in the Bantamweight UFC debut. Being exposed to the best in the business helped me to formulate a fighting style/system. I was able
                   formulate a style-- or rather, mix of styles. Being given proper resistance is what self growth is all about, and without it one
-                  will develop a false sense of security. This is what the world of martial arts is lacking. 
+                  will develop a false sense of security. This is what the world of martial arts lacks-- practicality, adaptiveness, spontanaeity, flexibility. 
+                  
                 </p>
                 <h4>Penn National Gaming</h4>
+                <p>
+                  I began my career at Penn at Hollywood Casino at Kansas Speedway as a slot technician. In this role I developed good troubleshooting and machine/circuit repair skills.
+                  While in this role I attended MCC and completed the <a href='https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/professional/ccnp-routing-switching.html'>CCNP</a> program offered there. 
+                  This program instills the core mechanics of networking needed to blossom into an architect. It is the ideal prerequisite to begin a career in networking, and even IT in general.
+                  Lucky for me, I was offered a position at the M Resort in Las Vegas where I could begin an IT career. I took it without a second thought.
+                  In this position I have learned the essentials of IT-- troubleshooting in depth, fundamentals of operating systems, application structure, database essentials.
+                  
+                </p>
           </TabPane>
           <TabPane tabId="2">
                 <h2 style={{textAlign: 'center', textDecoration: 'underline'}}>Networking</h2>
