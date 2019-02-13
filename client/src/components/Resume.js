@@ -70,7 +70,7 @@ class Resume extends Component {
                   This program instills the core mechanics of networking needed to blossom into an architect. It is the ideal prerequisite to begin a career in networking, and even IT in general.
                   Lucky for me, I was offered a position at the M Resort in Las Vegas where I could begin an IT career. I took it without a second thought.
                   In this position I have learned the essentials of IT-- troubleshooting in depth, fundamentals of operating systems, application structure, database essentials.
-                  
+                  This position enabled me to see the similarities all programs had 
                 </p>
           </TabPane>
           <TabPane tabId="2">
@@ -84,6 +84,7 @@ class Resume extends Component {
                   <li><CardText>Very familiar with EIGRP, OSPF, & BGP</CardText></li>
                   <li><CardText>Very familiar with Spanning Tree & SNMP</CardText></li>
                   <li><CardText>Proficient with ACLs </CardText></li>
+                  <li><CardText>Highly proficient with network architecture</CardText></li>
                   </ul>
                   <Button href="https://searchnetworking.techtarget.com/definition/Cisco-Certified-Network-Professional" style={{backgroundColor: 'black', color: 'lawngreen'}}>Cisco Academy</Button>
                 </Card>      
@@ -95,6 +96,7 @@ class Resume extends Component {
                   <li><CardText>Automate config of VLAN database, SNMP, AAA/Radius, SSH, STP</CardText></li>
                   <li><CardText>Pull running configs on a schedule & save to TFTP</CardText></li>
                   <li><CardText>Automate the building of ACLs</CardText></li>
+                  <li><CardText>Automate pushing of multiple switch configs simultaneously</CardText></li>
                   </ul>
                   <Button href="https://packetpushers.net/intro-python-network-automation" style={{backgroundColor: 'black', color: 'lawngreen'}}>Python for Network Automation</Button>
                 </Card>      
@@ -154,7 +156,62 @@ class Resume extends Component {
                   <Button href='https://vmware.com' style={{backgroundColor: 'black', color: 'lawngreen'}}>VMWare</Button>
                 </Card>
               </Col>
-            </Row>           
+            </Row>
+            <h2 style={{textAlign: 'center', textDecoration: 'underline'}}>Phone and POS Support</h2>
+            <Row>
+              <Col sm="6">
+                <Card body style={{backgroundColor: 'limegreen', color: 'black'}}>
+                  <CardTitle style={{textDecoration: 'underline', textAlign: 'center'}}>Avaya/Nortel CS1000 PBX</CardTitle>
+                  <ul>
+                  <li><CardText>Build hosts from scratch and pull them into the active cluster</CardText></li>
+                  <li><CardText>Configure and Optimize the VCenter server appliance</CardText></li>
+                  <li><CardText>Configure administrative options for security</CardText></li>
+                  <li><CardText>Configure Failover and Load-Balancing between hosts</CardText></li>
+                  <li><CardText>Apply patches and upgrade binaries</CardText></li>
+                  </ul>
+                  <Button href='https://vmware.com' style={{backgroundColor: 'black', color: 'lawngreen'}}>VMWare</Button>
+                </Card>
+              </Col>
+              <Col sm="6">
+                <Card body style={{backgroundColor: 'limegreen', color: 'black'}}>
+                  <CardTitle style={{textDecoration: 'underline', textAlign: 'center'}}>FreePBX</CardTitle>
+                  <ul>
+                  <li><CardText>Build hosts from scratch and pull them into the active cluster</CardText></li>
+                  <li><CardText>Configure and Optimize the VCenter server appliance</CardText></li>
+                  <li><CardText>Configure administrative options for security</CardText></li>
+                  <li><CardText>Configure Failover and Load-Balancing between hosts</CardText></li>
+                  <li><CardText>Apply patches and upgrade binaries</CardText></li>
+                  </ul>
+                  <Button href='https://vmware.com' style={{backgroundColor: 'black', color: 'lawngreen'}}>VMWare</Button>
+                </Card>
+              </Col>
+              <Col sm="6">
+                <Card body style={{backgroundColor: 'limegreen', color: 'black'}}>
+                  <CardTitle style={{textDecoration: 'underline', textAlign: 'center'}}>Android OS</CardTitle>
+                  <ul>
+                  <li><CardText>Build hosts from scratch and pull them into the active cluster</CardText></li>
+                  <li><CardText>Configure and Optimize the VCenter server appliance</CardText></li>
+                  <li><CardText>Configure administrative options for security</CardText></li>
+                  <li><CardText>Configure Failover and Load-Balancing between hosts</CardText></li>
+                  <li><CardText>Apply patches and upgrade binaries</CardText></li>
+                  </ul>
+                  <Button href='https://vmware.com' style={{backgroundColor: 'black', color: 'lawngreen'}}>VMWare</Button>
+                </Card>
+              </Col>
+              <Col sm="6">
+                <Card body style={{backgroundColor: 'limegreen', color: 'black'}}>
+                  <CardTitle style={{textDecoration: 'underline', textAlign: 'center'}}>Micros</CardTitle>
+                  <ul>
+                  <li><CardText>Build hosts from scratch and pull them into the active cluster</CardText></li>
+                  <li><CardText>Configure and Optimize the VCenter server appliance</CardText></li>
+                  <li><CardText>Configure administrative options for security</CardText></li>
+                  <li><CardText>Configure Failover and Load-Balancing between hosts</CardText></li>
+                  <li><CardText>Apply patches and upgrade binaries</CardText></li>
+                  </ul>
+                  <Button href='https://vmware.com' style={{backgroundColor: 'black', color: 'lawngreen'}}>VMWare</Button>
+                </Card>
+              </Col>
+            </Row>          
           </TabPane>
         </TabContent>
       </div>
