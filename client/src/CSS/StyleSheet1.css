@@ -1,4 +1,7 @@
-﻿.headerimage 
+﻿.link {
+  color:#f5000c;
+}
+.headerimage 
 {
     height: 500px;
     width: 100%;
