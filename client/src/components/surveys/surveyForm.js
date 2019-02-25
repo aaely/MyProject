@@ -43,11 +43,11 @@ class SurveyForm extends Component {
                     {this.renderFields()}
                     <table style={{width: '100%', border: '1px solid black', marginTop: '10px', marginBottom: '20px', textAlign: 'center'}}>
                         <thead style={{backgroundColor: 'black', color: 'green'}}>
-                        <tr><th>Time In</th><th>Time Out</th></tr>
+                        <tr><th>Time In</th></tr>
                         </thead>
                         <tbody>
-                        <tr><td><Field key="timeIn" component="input" style={{textAlign: 'center', width: '100px'}} type="text" label="Time In" name="timeIn" defaultValue={this.state.date.toLocaleTimeString()} /></td><td style={{textAlign: 'center', width: '100px'}}>{this.state.date.toLocaleTimeString()} /></td></tr>
-                        <tr><td>{this.state.date.toLocaleDateString()}</td><td>{this.state.date.toLocaleDateString()}</td></tr>
+                        <tr><td>{this.state.date.toLocaleTimeString()}</td></tr>
+                        <tr><td>{this.state.date.toLocaleDateString()}</td></tr>
                         </tbody>
                     </table>
                     <Link to="/surveys" className="red btn-flat white-text">
