@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import Fade from 'react-reveal/Fade';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
 
 class Skills extends Component {
     render() {
         return(
             <div>
-            <TabPane>
+            <Fade left>
                 <h2 style={{textAlign: 'center', textDecoration: 'underline'}}>Networking</h2>
             <Row>
               <Col sm="6">
@@ -158,7 +159,7 @@ class Skills extends Component {
                 </Card>
               </Col>
             </Row>     
-          </TabPane>
+          </Fade>
         </div>
         );
     }
