@@ -58,7 +58,7 @@ export default class MyComposedChart extends PureComponent {
         height={250}
         data={data}
         margin={{
-          top: 20, right: 20, bottom: 20, left: 20,
+          left: 30, top: 20, right: 20, bottom: 20
         }}
         style={{margin: '0 auto'}}
       >

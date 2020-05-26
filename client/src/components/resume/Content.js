@@ -36,7 +36,7 @@ export default class Content extends Component {
                 <p style={{marginLeft: '10px'}}>Responsibilities:</p>
                 <ul>
                     <li>Created and deployed scheduled packages and security patches for PCs via SCCM</li>
-                    <li>Troubleshooting for POS, Slot MCS Systems, Lodging Managment Systems, Office Applications, etc</li>
+                    <li>Troubleshooting for POS, Slot MCS Systems, Hotel Systems, Office Apps</li>
                 </ul>
                 <h3 style={{color: '#444'}}>Slot Technician</h3>
                 <h5 style={{color: '#222', marginLeft: '10%'}}><a href='https://www.pngaming.com/about-us/contact-us'>Penn National Gaming</a></h5>

@@ -6,7 +6,7 @@ import {
 
 const data = [
     {
-      name: 'Adaption', uv: 590, pv: 90, amt: 1400,
+      name: 'Adaptation', uv: 590, pv: 90, amt: 1400,
     },
     {
       name: 'Learning Curve', uv: 868, pv: 90, amt: 1506,
@@ -21,12 +21,14 @@ const data = [
   
 
 const getIntroOfPage = (label) => {
-    if (label === 'Front End') {
+    if (label === 'Adaptation') {
       return "Front End has been my main focus";
-    } if (label === 'Back End') {
-      return "Back End has been supplemental for dynamic Front End apps";
-    } if (label === 'Database') {
-      return "There really isn't much of an app without a database";
+    } if (label === 'Learning Curve') {
+      return "How quickly can a new skill be acquired";
+    } if (label === 'Teamwork') {
+      return "How well one meshes with group tasks";
+    } if (label === 'Leadership') {
+        return "A measure of ones ability to direct ones self and others";
     }
   };
   
@@ -52,7 +54,7 @@ export default class Intangibles extends PureComponent {
         height={250}
         data={data}
         margin={{
-          top: 20, right: 20, bottom: 20, left: 20,
+          top: 20, right: 20, bottom: 20, left: 30,
         }}
         style={{margin: '0 auto'}}
       >
