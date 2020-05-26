@@ -41,10 +41,12 @@ class Skills extends Component {
                 <Card body style={{backgroundColor: 'limegreen', color: 'black'}}>
                   <CardTitle style={{textDecoration: 'underline', textAlign: 'center'}}>React.js</CardTitle>
                   <ul>
-                  <li><CardText>Intermediate/Advanced Web Developer</CardText></li>
-                  <li><CardText>Custom web reporting utilies</CardText></li>
-                  <li><CardText>Simple, Animated, Effective advertisement on time schedule</CardText></li>
+                  <li><CardText>Database/API-call interactive graphs/charts with legends</CardText></li>
+                  <li><CardText>Animation of items for increased interactivity</CardText></li>
+                  <li><CardText>Handle payments with PCI Compliant APIs</CardText></li>
                   <li><CardText>Interactive menus, FAQs, Training Tips, File Sharing</CardText></li>
+                  <li><CardText>Websockets for interapp messaging/streaming, real time data</CardText></li>
+                  <li><CardText>Interactive, step based forms with validation</CardText></li>
                   </ul>
                   <Button href='https://reactjs.org' style={{backgroundColor: 'black', color: 'lawngreen'}}>React.JS</Button>
                 </Card>
@@ -53,10 +55,12 @@ class Skills extends Component {
                 <Card body style={{backgroundColor: 'limegreen', color: 'black'}}>
                   <CardTitle style={{textDecoration: 'underline', textAlign: 'center'}}>Node.JS</CardTitle>
                   <ul>
-                  <li><CardText>Intermediate back-end skill</CardText></li>
-                  <li><CardText>Express and Mongoose for database connection</CardText></li>
-                  <li><CardText>Can use web-workers/clustering to improve performance</CardText></li>
-                  <li><CardText>MongoDB Models, Automated Emails, Payment Handling</CardText></li>
+                  <li><CardText>File Upload handling</CardText></li>
+                  <li><CardText>Websockets for real time data polling</CardText></li>
+                  <li><CardText>Web-Workers/clustering to improve performance</CardText></li>
+                  <li><CardText>MongoDB Connection, Queries, and passing data to Front End</CardText></li>
+                  <li><CardText>Automated Emails with personalization based on conditions</CardText></li>
+                  <li><CardText>Payment Handling with PCI Compliant API <a href='https://stripe.com/'>Stripe</a></CardText></li>
                   </ul>
                   <Button href='https://nodejs.org' style={{backgroundColor: 'black', color: 'lawngreen'}}>Node.JS</Button>
                 </Card>

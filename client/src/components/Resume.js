@@ -5,6 +5,7 @@ import Skills from './resume/Skills';
 import Collapsible from 'react-collapsible';
 import Bio from './resume/Bio';
 import Goals from './resume/Goals';
+import ResumeDoc from './resume/ResumeDoc';
 
 class Resume extends Component {
   constructor(props) {
@@ -12,7 +13,7 @@ class Resume extends Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      activeTab: '2'
+      activeTab: '4'
     };
   }
 
@@ -22,7 +23,7 @@ class Resume extends Component {
         activeTab: tab
       });
     }
-  }
+  } 
 
   render() {
     return (
@@ -52,6 +53,14 @@ class Resume extends Component {
             Goals
             </NavLink>
           </NavItem>
+          <NavItem>
+            <NavLink
+            className={classnames({ active: this.state.activeTab === '4' })}
+            onClick={() => { this.toggle('4'); }}
+            >
+            Resume
+            </NavLink>
+          </NavItem>
         </Nav>
         <TabContent activeTab={this.state.activeTab}>
           <TabPane tabId="1">
@@ -62,6 +71,9 @@ class Resume extends Component {
           </TabPane>  
           <TabPane tabId="3">
             <Goals />
+          </TabPane>
+          <TabPane tabId="4">
+            <ResumeDoc />
           </TabPane>
         </TabContent>
       </div>

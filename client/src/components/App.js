@@ -13,6 +13,7 @@ import mobileDisplay from './mobileDisplay'
 import todoList from './todoList';
 import AccessLog from './remoteAccess/accessLog'
 import Resume from './Resume';
+import ResumeDoc from './resume/ResumeDoc'
 
 class App extends Component {
   componentDidMount() {
@@ -34,6 +35,7 @@ class App extends Component {
             <Route path="/todoList" component={todoList} />
             <Route path="/accessform" component={AccessLog} />
             <Route path="/resume" component={Resume} />
+            <Route path="/resumepage" component={ResumeDoc} />
           </div>
         </BrowserRouter>
         </div>
