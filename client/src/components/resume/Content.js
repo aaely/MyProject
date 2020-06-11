@@ -20,44 +20,43 @@ export default class Content extends Component {
     render() {
         return(
                 <div>
+                <h1 style={{backgroundColor: 'green', display: 'inline-flex'}}>Work History</h1>
                 <h3 style={{color: '#444'}}>System Test Engineer</h3>
                 <h5 style={{color: '#222', marginLeft: '10%'}}><a href='https://gaminglabs.com/contact/'>Gaming Laboratories International LLC (GLI)</a></h5>
                 <h5 style={{color: '#222', marginLeft: '10%'}}>Manager: Aaron Green</h5>
                 <h5 style={{color: '#222', marginLeft: '10%'}}>732-942-3999</h5>
-                <p style={{marginLeft: '10px'}}>Responsibilities:</p>
-                <ul>
+                <h5 style={{marginLeft: '10px'}}><u>Responsibilities:</u></h5>
+                <ul style={{display: 'inline-block'}}>
                     <li>Test newly developed software for Jurisdictional Compliance</li>
-                    <li>Determine if software is up to par for each Jurisdiction an approval is sought for</li>
-                    <li>Snoop network traffic to verify encryption is being utilized</li>
-                    <li>Find ways to potentially exploit security vulnerabilities in applications</li>
-                    <li>Configure systems and slot machines to perform testing</li>
-                    <li>Investigate issues and provide meaningful feedback to the developers</li>
-                    <li>Created a <a href='https://github.com/aaely/gli'>React App</a> to track the progress of a submissions modification testing</li>
+                    <li>Wireshark traffic</li>
+                    <li>Exploit vulnerabilities</li>
+                    <li>Configure systems and slot machines</li>
+                    <li>Priovide detailed issues to suppliers</li>
+                    <li style={{backgroundColor: 'yellow'}}>Created a <a href='https://github.com/aaely/gli'>React App</a> to track submission progress</li>
                 </ul>
                 <h3 style={{color: '#444'}}>IT Technician</h3>
                 <h5 style={{color: '#222', marginLeft: '10%'}}><a href='https://www.pngaming.com/about-us/contact-us'>Penn National Gaming</a></h5>
                 <h5 style={{color: '#222', marginLeft: '10%'}}>Manager: Jason Gatrell</h5>
                 <h5 style={{color: '#222', marginLeft: '10%'}}>610-373-2400</h5>
-                <p style={{marginLeft: '10px'}}>Responsibilities:</p>
+                <h5 style={{marginLeft: '10px'}}><u>Responsibilities:</u></h5>
                 <ul>
-                    <li>Created and deployed scheduled app packages and security patches for PCs via SCCM</li>
-                    <li>Troubleshooting for POS, Slot MCS Systems, Hotel Systems, Office Apps</li>
-                    <li>Created custom build images for mass deployment</li>
-                    <li>Created powershell scripts to manage PC inventory and automate changes</li>
-                    <li>Set up POS machines for concerts and banquets</li>
+                    <li>Scheduled SCCM deployments</li>
+                    <li>POS systems</li>
+                    <li>Lodging Systems</li>
+                    <li>Office Apps</li>
+                    <li>Slot MCS Systems</li>
+                    <li>Mass Deployments of images</li>
                 </ul>
-                <h3 style={{color: '#444'}}>Slot Technician</h3>
-                <h5 style={{color: '#222', marginLeft: '10%'}}><a href='https://www.pngaming.com/about-us/contact-us'>Penn National Gaming</a></h5>
-                <h5 style={{color: '#222', marginLeft: '10%'}}>Manager: Tim Sitcha</h5>
-                <h5 style={{color: '#222', marginLeft: '10%'}}>610-373-2400</h5>
-                <p style={{marginLeft: '10px'}}>Responsibilities:</p>
+                <h1 style={{display: 'inline-block', backgroundColor: 'red'}}>Education</h1>
                 <ul>
-                    <li>Install wire harness and player tracking boards in slot machines</li>
-                    <li>Fix bad components on circuit boards</li>
-                    <li>Replace CFL back lights with LEDs in bad Monitors</li>
-                    <li>Replace bad components in slot machines</li>
-                    <li>Troubleshoot issues with slot machines</li>
-                    <li>Configure slot machines to be KRGC compliant</li>
+                    <li><h5>Edinboro University of Pennsylvania</h5></li>
+                    <ul>
+                        <li>Computer Science</li>
+                    </ul>
+                    <li><h5>Metropolitan Community College</h5></li>
+                    <ul>    
+                        <li>Computer Science - Cisco Networking CCNA</li>
+                    </ul>
                 </ul>
                 </div>
         )

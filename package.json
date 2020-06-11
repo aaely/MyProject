@@ -33,6 +33,7 @@
     "curl": "^0.1.4",
     "errno": "^0.1.7",
     "express": "^4.17.1",
+    "googleapis": "^52.1.0",
     "istanbul": "^0.4.5",
     "jshint": "^2.11.1",
     "jshint-stylish": "^2.2.1",
