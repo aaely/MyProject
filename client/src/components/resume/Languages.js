@@ -20,6 +20,9 @@ const data = [
     {
       name: 'SQL', uv: 123, pv: 65, amt: 123,
     },
+    {
+      name: 'Solidity', uv: 123, pv: 85, amt: 123,
+    },
   ];
   
 
@@ -34,7 +37,9 @@ const getIntroOfPage = (label) => {
         return "Functionally familiar with all basic queries and mutations";
     } if (label === 'SQL') {
         return "Functionally familiar with all complex queries and schema, not as familiar with SPs";
-    }
+    } if (label === 'Solidity') {
+      return "Functionally familiar with all complex queries and schema, not as familiar with SPs";
+  }
   };
   
   const CustomTooltip = ({ active, payload, label }) => {

@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class Content extends Component {
 
     constructor(props) {
-        super(props);
+        super();
         this.state = {
 
         }
@@ -21,6 +21,15 @@ export default class Content extends Component {
         return(
                 <div>
                 <h1 style={{backgroundColor: 'green', display: 'inline-flex'}}>Work History</h1>
+                <h3 style={{color: '#444'}}>Freelance Web Developer</h3>
+                <h5 style={{marginLeft: '10px'}}><u>Applications Developed:</u></h5>
+                <ul style={{display: 'inline-block'}}>
+                    <li>Election app using Ethereum Smart Contract as database</li>
+                    <li>Full Stack app providing tracking for new project submissions for software testing</li>
+                    <li>Full Stack app housing a company wide wiki on a department by department basis</li>
+                    <li>Draft.js Blog using Ethereum Smart Contracts that allowed for tipping of content</li>
+                    <li>Utilized oAuth with storage on Ethereum Smart Contracts</li>
+                </ul>
                 <h3 style={{color: '#444'}}>System Test Engineer</h3>
                 <h5 style={{color: '#222', marginLeft: '10%'}}><a href='https://gaminglabs.com/contact/'>Gaming Laboratories International LLC (GLI)</a></h5>
                 <h5 style={{color: '#222', marginLeft: '10%'}}>Manager: Aaron Green</h5>
@@ -49,9 +58,9 @@ export default class Content extends Component {
                 </ul>
                 <h1 style={{display: 'inline-block', backgroundColor: 'red'}}>Education</h1>
                 <ul>
-                    <li><h5>Edinboro University of Pennsylvania</h5></li>
-                    <ul>
-                        <li>Computer Science</li>
+                <li><h5>Dapp University</h5></li>
+                    <ul>    
+                        <li>All courses and bootcamp</li>
                     </ul>
                     <li><h5>Metropolitan Community College</h5></li>
                     <ul>    

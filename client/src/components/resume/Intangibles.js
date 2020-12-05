@@ -6,29 +6,29 @@ import {
 
 const data = [
     {
-      name: 'Adaptation', uv: 590, pv: 90, amt: 1400,
+      name: 'Web3.js', uv: 590, pv: 85, amt: 1400,
     },
     {
-      name: 'Learning Curve', uv: 868, pv: 90, amt: 1506,
+      name: 'Passport.js', uv: 868, pv: 60, amt: 1506,
     },
     {
-      name: 'Teamwork', uv: 1397, pv: 80, amt: 989,
+      name: 'Draft.js', uv: 1397, pv: 85, amt: 989,
     },
     {
-      name: 'Leadership', uv: 123, pv: 70, amt: 123,
+      name: 'React State Mgmt', uv: 123, pv: 95, amt: 123,
     },
   ];
   
 
 const getIntroOfPage = (label) => {
-    if (label === 'Adaptation') {
-      return "Front End has been my main focus";
-    } if (label === 'Learning Curve') {
-      return "How quickly can a new skill be acquired";
-    } if (label === 'Teamwork') {
-      return "How well one meshes with group tasks";
-    } if (label === 'Leadership') {
-        return "A measure of ones ability to direct ones self and others";
+    if (label === 'Web3.js') {
+      return "Metamask injector for Smart Contract interaction";
+    } if (label === 'Passport.js') {
+      return "Handle oAuth with Facebook, Twitter, Google, etc";
+    } if (label === 'Draft.js') {
+      return "Allows for a rich text editor similar to Microsoft Word pad for content creation and saving with formatting";
+    } if (label === 'React State Management') {
+        return "I have opted out of redux in favor of using the built in react functionality with props and callbacks";
     }
   };
   

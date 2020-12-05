@@ -13,12 +13,6 @@ const data = [
   },
   {
     name: 'Database', uv: 1397, pv: 70, amt: 989,
-  },
-  {
-    name: 'Automation', uv: 123, pv: 85, amt: 213,
-  },
-  {
-    name: 'Networking', uv: 123, pv: 95, amt: 123
   }
 ];
 
@@ -29,11 +23,7 @@ const getIntroOfPage = (label) => {
       return "Back End has been supplemental for dynamic Front End apps";
     } if (label === 'Database') {
       return "There really isn't much of an app without a database";
-    } if (label === 'Automation') {
-        return "An essential part of graowing a business";
-    } if (label === 'Networking') {
-        return "Essential for secure traffic and remote work"
-    }
+    } 
   };
   
   const CustomTooltip = ({ active, payload, label }) => {

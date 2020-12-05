@@ -31,5 +31,11 @@ module.exports = app => {
             res.redirect('/surveys');
         }
     );
+
+    app.get('auth/youtube', passport.authenticate('youtube', {
+        scopt: []
+    }));
+
+    app.get('auth/youtube', passport.authenticate('youtube'));
 };
 

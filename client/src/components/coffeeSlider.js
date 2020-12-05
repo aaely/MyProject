@@ -6,7 +6,7 @@ import img3 from "./images/coffee3.jpg";
 
 class CoffeeSlider extends React.Component {
   render() {
-    var settings = {
+    const settings = {
       dots: true,
       infinite: true,
       speed: 500,
