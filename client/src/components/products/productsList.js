@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchProducts, addToCart } from '../../actions';
+import { fetchProducts, addToCart, fetchCart } from '../../actions';
 import Slider from 'react-slick';
 
 class ProductsList extends Component {
     componentDidMount() {
         this.props.fetchProducts();
-        this.props.addToCart();
+        this.props.fetchCart();
+        console.log(this.props)
     }
 
     renderProducts() {
@@ -81,4 +82,4 @@ function mapStateToProps({ products, cart }) {
     return { products, cart };
 }
 
-export default connect(mapStateToProps, { fetchProducts, addToCart })(ProductsList);
+export default connect(mapStateToProps, { fetchProducts, addToCart, fetchCart })(ProductsList);

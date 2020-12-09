@@ -9,6 +9,7 @@ module.exports = app => {
         passport.authenticate('google'),
         (req, res) => {
             res.redirect('/surveys');
+            console.log(req.user)
         }
     );
 
@@ -33,7 +34,7 @@ module.exports = app => {
     );
 
     app.get('auth/youtube', passport.authenticate('youtube', {
-        scopt: []
+        scope: []
     }));
 
     app.get('auth/youtube', passport.authenticate('youtube'));
