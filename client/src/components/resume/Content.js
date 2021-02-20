@@ -37,10 +37,10 @@ export default class Content extends Component {
                 <h5 style={{marginLeft: '10px'}}><u>Responsibilities:</u></h5>
                 <ul style={{display: 'inline-block'}}>
                     <li>Test newly developed software for Jurisdictional Compliance</li>
-                    <li>Wireshark traffic</li>
-                    <li>Exploit vulnerabilities</li>
-                    <li>Configure systems and slot machines</li>
-                    <li>Priovide detailed issues to suppliers</li>
+                    <li>Wireshark traffic to verify encryption and/or leakage</li>
+                    <li>Exploit potential vulnerabilities</li>
+                    <li>Configure systems and slot machines for testing</li>
+                    <li>Priovide detailed write-ups of issues to suppliers</li>
                     <li style={{backgroundColor: 'yellow'}}>Created a <a href='https://github.com/aaely/gli'>React App</a> to track submission progress</li>
                 </ul>
                 <h3 style={{color: '#444'}}>IT Technician</h3>
@@ -54,7 +54,7 @@ export default class Content extends Component {
                     <li>Lodging Systems</li>
                     <li>Office Apps</li>
                     <li>Slot MCS Systems</li>
-                    <li>Mass Deployments of images</li>
+                    <li>Mass Deployments of images and targeted software deployments</li>
                 </ul>
                 <h1 style={{display: 'inline-block', backgroundColor: 'red'}}>Education</h1>
                 <ul>

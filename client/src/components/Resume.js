@@ -25,6 +25,13 @@ class Resume extends Component {
     }
   } 
 
+  renderCert() {
+    //<script>var stylesheet = "https://app.testdome.com/content/source/stylesheets/embed.css", link = document.createElement("link"); link.href = stylesheet, link.type = "text/css", link.rel = "stylesheet", link.media = "screen,print", document.getElementsByTagName("head")[0].appendChild(link);</script>
+    return(
+      <a href="https://app.testdome.com/cert/c361b6aa180b4fc98b898732257d1435" class="testdome-certificate-stamp gold"><span class="testdome-certificate-name">Aaron Ely</span><span class="testdome-certificate-test-name">React </span><span class="testdome-certificate-card-logo">TestDome<br />Certificate</span></a>
+    )
+  }
+
   render() {
     return (
       <div>

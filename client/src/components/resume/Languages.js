@@ -12,6 +12,9 @@ const data = [
       name: 'Node.js', uv: 868, pv: 80, amt: 1506,
     },
     {
+      name: 'FlureeDB', uv: 868, pv: 80, amt: 1506,
+    },
+    {
       name: 'Mongo', uv: 1397, pv: 80, amt: 989,
     },
     {
@@ -31,6 +34,8 @@ const getIntroOfPage = (label) => {
       return "Extremely familiar with this library";
     } if (label === 'Node.js') {
       return "Functionally familiar over a broad spectrum of functionality";
+    } if (label === 'FlureeDB') {
+      return "GraphDB running on a blockchain ledger. Allows for submillisecond queries. Immune to Ransomware and DOS attacks.";
     } if (label === 'Mongo') {
       return "Functionally familiar with complex queries, and updates";
     } if (label === 'Graphql') {
@@ -61,7 +66,7 @@ export default class Languages extends PureComponent {
       <ComposedChart
         layout="vertical"
         width={300}
-        height={250}
+        height={400}
         data={data}
         margin={{
           top: 20, right: 20, bottom: 20, left: 30,
