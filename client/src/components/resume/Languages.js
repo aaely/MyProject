@@ -12,13 +12,10 @@ const data = [
       name: 'Node.js', uv: 868, pv: 80, amt: 1506,
     },
     {
-      name: 'FlureeDB', uv: 868, pv: 80, amt: 1506,
+      name: 'Rust', uv: 868, pv: 80, amt: 1506,
     },
     {
-      name: 'Mongo', uv: 1397, pv: 80, amt: 989,
-    },
-    {
-      name: 'Graphql', uv: 123, pv: 70, amt: 123,
+      name: 'Golang', uv: 1397, pv: 60, amt: 989,
     },
     {
       name: 'SQL', uv: 123, pv: 65, amt: 123,
@@ -31,19 +28,17 @@ const data = [
 
 const getIntroOfPage = (label) => {
     if (label === 'React.js') {
-      return "Extremely familiar with this library";
+      return "Front End library implementing a virtual dom and flexible build structure";
     } if (label === 'Node.js') {
-      return "Functionally familiar over a broad spectrum of functionality";
-    } if (label === 'FlureeDB') {
-      return "GraphDB running on a blockchain ledger. Allows for submillisecond queries. Immune to Ransomware and DOS attacks.";
-    } if (label === 'Mongo') {
-      return "Functionally familiar with complex queries, and updates";
-    } if (label === 'Graphql') {
-        return "Functionally familiar with all basic queries and mutations";
+      return "Back End javascript with a broad spectrum of functionality";
+    } if (label === 'Rust') {
+      return "High and low level support all in one language. Strongly typed and highly performant.";
+    } if (label === 'Golang') {
+      return "Similar to Rust in terms of what is seeking to be accomplished, not as fast, but easier to use";
     } if (label === 'SQL') {
         return "Functionally familiar with all complex queries and schema, not as familiar with SPs";
     } if (label === 'Solidity') {
-      return "Functionally familiar with all complex queries and schema, not as familiar with SPs";
+      return "Programming language of the Ethereum Virtual Machine";
   }
   };
   

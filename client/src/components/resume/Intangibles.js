@@ -9,13 +9,19 @@ const data = [
       name: 'Web3.js', uv: 590, pv: 85, amt: 1400,
     },
     {
+      name: 'Polkadot-js', uv: 590, pv: 85, amt: 1400,
+    },
+    {
       name: 'Socket.io', uv: 868, pv: 65, amt: 1506,
     },
     {
-      name: 'Draft.js', uv: 1397, pv: 85, amt: 989,
+      name: 'ReactSpring', uv: 868, pv: 70, amt: 1506,
     },
     {
-      name: 'Recoil', uv: 123, pv: 90, amt: 123,
+      name: 'Substrate', uv: 1397, pv: 75, amt: 989,
+    },
+    {
+      name: 'Recoil.js', uv: 123, pv: 90, amt: 123,
     },
   ];
   

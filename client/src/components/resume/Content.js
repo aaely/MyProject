@@ -27,8 +27,9 @@ export default class Content extends Component {
                     <li>Election app using Ethereum Smart Contract as database</li>
                     <li>Full Stack app providing tracking for new project submissions for software testing</li>
                     <li>Full Stack app housing a company wide wiki on a department by department basis</li>
-                    <li>Draft.js Blog using Ethereum Smart Contracts that allowed for tipping of content</li>
-                    <li>Utilized oAuth with storage on Ethereum Smart Contracts</li>
+                    <li>Full Stack App Ecommerce platform featuring using React.js and Ethereum as a database</li>
+                    <li>Full Stack App featuring FlureeDB (a blockchain graphDB), Graphql, Node.js, and React.js for Ecommerce</li>
+                    <li>Full Stack App featuring Parity Substrate for Ecommerce, and Instagram inspired Social Medial Platform</li>
                 </ul>
                 <h3 style={{color: '#444'}}>System Test Engineer</h3>
                 <h5 style={{color: '#222', marginLeft: '10%'}}><a href='https://gaminglabs.com/contact/'>Gaming Laboratories International LLC (GLI)</a></h5>
