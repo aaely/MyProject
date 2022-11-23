@@ -64,7 +64,7 @@
     "semver": "^5.7.1",
     "sendgrid": "^5.2.3",
     "sinon": "^7.2.3",
-    "socket.io": "^2.3.0",
+    "socket.io": "^2.5.0",
     "socket.io-client": "^2.3.0",
     "stripe": "^6.36.0",
     "utf-8-validate": "^5.0.2"
